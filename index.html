@@ -1,1 +1,63 @@
-Emrah ÜSTÜN
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Emrah Üstün — Director of AI Engineering @TrioMobil</title>
+  <meta name="description" content="Emrah Üstün — Director of AI Engineering at TrioMobil. Edge-AI, Computer Vision and industrial safety systems." />
+  <link rel="canonical" href="https://emrahustun.com/">
+  <meta property="og:title" content="Emrah Üstün — Director of AI Engineering @TrioMobil" />
+  <meta property="og:description" content="Edge-AI & Computer Vision for safety and efficiency in industrial environments." />
+  <meta property="og:url" content="https://emrahustun.com/" />
+  <meta name="theme-color" content="#0f172a" />
+  <style>
+    :root{ --bg:#0b1020; --fg:#e5e7eb; --muted:#9ca3af; --accent:#22d3ee; --card:#0f172a; --border:#1f2a44; }
+    @media(prefers-color-scheme:light){ :root{ --bg:#ffffff; --fg:#0f172a; --muted:#475569; --accent:#0ea5e9; --card:#f8fafc; --border:#e2e8f0; } }
+    body{margin:0;font-family:system-ui,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--fg);line-height:1.6}
+    .wrap{max-width:980px;margin:0 auto;padding:28px 20px 64px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-top:8px}
+    .brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
+    .avatar{width:58px;height:58px;border-radius:14px;background:linear-gradient(135deg,var(--accent),transparent);display:grid;place-items:center;border:1px solid var(--border);font-weight:700}
+    .name{font-size:20px;font-weight:800;margin:0}
+    .title{font-size:13px;color:var(--muted);margin:2px 0 0}
+    .title a{color:inherit;text-decoration:underline}
+    .mode{border:1px solid var(--border);background:transparent;color:var(--fg);padding:6px 12px;border-radius:10px;cursor:pointer;font-size:13px}
+    .hero{margin:64px 0 28px}
+    .h1{font-size:40px;line-height:1.15;margin:0 0 12px}
+    .lead{font-size:18px;color:var(--muted);margin:0}
+    .cta{margin-top:28px}
+    .btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;padding:10px 14px;border-radius:12px;font-weight:600;font-size:14px;border:1px solid var(--border);color:var(--fg)}
+    .btn.primary{border-color:transparent;background:linear-gradient(135deg,var(--accent),transparent)}
+    @media(max-width:860px){.h1{font-size:32px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="/">
+        <div>
+          <p class="name">Emrah Üstün</p>
+          <p class="title">Director of AI Engineering @ <a href="https://triomobil.com" target="_blank" rel="noopener">TrioMobil</a></p>
+        </div>
+      </a>
+      <button class="mode" id="modeBtn" aria-label="Toggle theme">☾/☀</button>
+    </header>
+
+    <main class="hero">
+      <h1 class="h1">Building reliable AI at the edge.</h1>
+      <p class="lead">I lead research and productization of <strong>Edge‑AI</strong> and <strong>Computer Vision</strong> systems for industrial safety and efficiency.</p>
+      <div>
+        <a class="btn primary" href="https://www.linkedin.com/in/emrahustun/" target="_blank" rel="noopener">🔗 LinkedIn</a>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    const btn=document.getElementById('modeBtn');
+    const apply=t=>{document.documentElement.style.colorScheme=t};
+    const saved=localStorage.getItem('theme');
+    if(saved)apply(saved);
+    btn.onclick=()=>{const c=getComputedStyle(document.documentElement).colorScheme;const n=c==='dark'?'light':'dark';apply(n);localStorage.setItem('theme',n)};
+  </script>
+</body>
+</html>
