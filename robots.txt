@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /*?C=D;O=A
+Disallow: /*?C=M;O=A
+Disallow: /*?C=N;O=A
+Disallow: /*?C=S;O=A
